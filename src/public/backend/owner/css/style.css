@@ -4,16 +4,16 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
-@import url("https://yotrip.vn/public/backend/owner/icons/simple-line-icons/css/simple-line-icons.css");
-@import url("https://yotrip.vn/public/backend/owner/icons/font-awesome/css/all.min.css");
-@import url("https://yotrip.vn/public/backend/owner/icons/material-design-iconic-font/css/materialdesignicons.min.css");
-@import url("https://yotrip.vn/public/backend/owner/icons/themify-icons/css/themify-icons.css");
-@import url("https://yotrip.vn/public/backend/owner/icons/line-awesome/css/line-awesome.min.css");
-@import url("https://yotrip.vn/public/backend/owner/icons/avasta/css/style.css");
-@import url("https://yotrip.vn/public/backend/owner/icons/flaticon/flaticon.css");
-@import url("https://yotrip.vn/public/backend/owner/icons/flaticon_1/flaticon_1.css");
-@import url("https://yotrip.vn/public/backend/owner/icons/icomoon/icomoon.css");
-@import url("https://yotrip.vn/public/backend/owner/icons/bootstrap-icons/font/bootstrap-icons.css");
+@import url("/backend/owner/icons/simple-line-icons/css/simple-line-icons.css");
+@import url("/backend/owner/icons/font-awesome/css/all.min.css");
+@import url("/backend/owner/icons/material-design-iconic-font/css/materialdesignicons.min.css");
+@import url("/backend/owner/icons/themify-icons/css/themify-icons.css");
+@import url("/backend/owner/icons/line-awesome/css/line-awesome.min.css");
+@import url("/backend/owner/icons/avasta/css/style.css");
+@import url("/backend/owner/icons/flaticon/flaticon.css");
+@import url("/backend/owner/icons/flaticon_1/flaticon_1.css");
+@import url("/backend/owner/icons/icomoon/icomoon.css");
+@import url("/backend/owner/icons/bootstrap-icons/font/bootstrap-icons.css");
 
 :root {
   --primary: #AF2D23;

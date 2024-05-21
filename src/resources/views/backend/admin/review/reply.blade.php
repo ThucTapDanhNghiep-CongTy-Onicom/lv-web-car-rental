@@ -63,9 +63,9 @@
 </div>
 @endsection
 @push('scripts')
-<script src="{{asset('public/backend/assets/libs/dropzone/min/dropzone.min.js')}}"></script>
-<script src="{{asset('public/backend/assets/libs/dropify/js/dropify.min.js')}}"></script>
+<script src="{{asset('backend/assets/libs/dropzone/min/dropzone.min.js')}}"></script>
+<script src="{{asset('backend/assets/libs/dropify/js/dropify.min.js')}}"></script>
 
-<script src="{{asset('public/backend/assets/js/pages/form-fileuploads.init.js')}}"></script>
-<script src="{{asset('public/backend/assets/js/app.js')}}"></script>
+<script src="{{asset('backend/assets/js/pages/form-fileuploads.init.js')}}"></script>
+<script src="{{asset('backend/assets/js/app.js')}}"></script>
 @endpush

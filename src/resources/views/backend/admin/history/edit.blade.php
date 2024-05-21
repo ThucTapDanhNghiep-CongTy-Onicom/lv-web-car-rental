@@ -62,7 +62,7 @@
                                 <label class="form-label">Photo</label>
                                 <input class="form-control" type="file" name="upload" accept="image/*">
 
-                                <div class="img-update" style="background: url({{asset('public/backend/uploads/banners')}}/{{$banner->photo}})"></div>
+                                <div class="img-update" style="background: url({{asset('backend/uploads/banners')}}/{{$banner->photo}})"></div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Status</label><br>

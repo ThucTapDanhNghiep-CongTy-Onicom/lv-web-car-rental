@@ -160,8 +160,8 @@ class Cars_Controller extends Controller {
         $photo_name = "";
         foreach ($request->upload as $photo) {
             if ($photo) {
-                $file = "https://yotrip.vn/public/backend/uploads/images/cars/".$photo->getClientOriginalName();
-                $filePath =  'public/backend/uploads/images/cars';
+                $file = "/backend/uploads/images/cars/".$photo->getClientOriginalName();
+                $filePath =  'backend/uploads/images/cars';
                 $photo->move($filePath, $file);
                 $photo_name .= $file . ",";
             }
@@ -280,8 +280,8 @@ class Cars_Controller extends Controller {
         if ($request->upload) {
             foreach ($request->upload as $photo) {
                 if ($photo) {
-                    $file = "https://yotrip.vn/public/backend/uploads/images/cars/".$photo->getClientOriginalName();
-                    $filePath = 'public/backend/uploads/images/cars';
+                    $file = "/backend/uploads/images/cars/".$photo->getClientOriginalName();
+                    $filePath = 'backend/uploads/images/cars';
                     $photo->move($filePath, $file);
                     $photo_name .= $file . ",";
                 }

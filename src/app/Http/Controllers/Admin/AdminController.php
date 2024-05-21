@@ -43,9 +43,9 @@ class AdminController extends Controller
         $data = $request->all();
         if ($request->upload) {
 
-            $data['value'] = "https://yotrip.vn/public/backend/uploads/images/".$request->upload->getClientOriginalName();
+            $data['value'] = "/backend/uploads/images/".$request->upload->getClientOriginalName();
             $file = $request->upload->getClientOriginalName();
-            $filePath = 'public/backend/uploads/images';
+            $filePath = 'backend/uploads/images';
 
             $request->upload->move($filePath, $file);
         }

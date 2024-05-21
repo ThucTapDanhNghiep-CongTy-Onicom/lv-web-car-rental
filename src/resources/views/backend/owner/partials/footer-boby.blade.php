@@ -1,21 +1,21 @@
 @stack('scripts')
 <!-- Required vendors -->
-<script src="{{ asset('public/backend/owner/vendor/global/global.min.js') }}"></script>
-<script src="{{ asset('public/backend/owner/vendor/chart.js/Chart.bundle.min.js') }}"></script>
-<script src="{{ asset('public/backend/owner/vendor/jquery-nice-select/js/jquery.nice-select.min.js') }}"></script>
+<script src="{{ asset('backend/owner/vendor/global/global.min.js') }}"></script>
+<script src="{{ asset('backend/owner/vendor/chart.js/Chart.bundle.min.js') }}"></script>
+<script src="{{ asset('backend/owner/vendor/jquery-nice-select/js/jquery.nice-select.min.js') }}"></script>
 
 <!-- Apex Chart -->
-<script src="{{ asset('public/backend/owner/vendor/apexchart/apexchart.js') }}"></script>
-<script src="{{ asset('public/backend/owner/vendor/nouislider/nouislider.min.js') }}"></script>
-<script src="{{ asset('public/backend/owner/vendor/wnumb/wNumb.js') }}"></script>
+<script src="{{ asset('backend/owner/vendor/apexchart/apexchart.js') }}"></script>
+<script src="{{ asset('backend/owner/vendor/nouislider/nouislider.min.js') }}"></script>
+<script src="{{ asset('backend/owner/vendor/wnumb/wNumb.js') }}"></script>
 
 <!-- Dashboard 1 -->
-<script src="{{ asset('public/backend/owner/js/dashboard/dashboard-1.js') }}"></script>
+<script src="{{ asset('backend/owner/js/dashboard/dashboard-1.js') }}"></script>
 
-<script src="{{ asset('public/backend/owner/js/custom.min.js') }}"></script>
-<script src="{{ asset('public/backend/owner/js/dlabnav-init.js') }}"></script>
-<script src="{{ asset('public/backend/owner/js/demo.js') }}"></script>
-<script src="{{ asset('public/backend/owner/js/styleSwitcher.js') }}"></script>
+<script src="{{ asset('backend/owner/js/custom.min.js') }}"></script>
+<script src="{{ asset('backend/owner/js/dlabnav-init.js') }}"></script>
+<script src="{{ asset('backend/owner/js/demo.js') }}"></script>
+<script src="{{ asset('backend/owner/js/styleSwitcher.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 <script>
     //Script tạo popup hiện lên khi bấm nút xóa

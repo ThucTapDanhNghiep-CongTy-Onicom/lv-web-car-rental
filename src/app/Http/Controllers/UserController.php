@@ -21,12 +21,12 @@ class UserController extends Controller
         if ($request->photo) {
             $data['photo'] = $request->photo->getClientOriginalName();
             $file = $request->photo->getClientOriginalName();
-            $filePath = 'public/backend/uploads/images/users';
+            $filePath = 'backend/uploads/images/users';
             $request->photo->move($filePath, $file);
         }
         //Kiểm tra ảnh có phải là ảnh của google hay fb hông
         if (strpos($request->photo->getClientOriginalName(), 'https://lh3') === false || strpos($request->photo->getClientOriginalName(), 'https://graph.facebook.com') === false ) {
-            $data['photo'] = "https://yotrip.vn/public/backend/uploads/images/users/".$request->photo->getClientOriginalName();
+            $data['photo'] = "/backend/uploads/images/users/".$request->photo->getClientOriginalName();
         }
         //Lưu dữ liệu xuống database và kiểm tra
         $users->fill($data)->save();
@@ -39,7 +39,7 @@ class UserController extends Controller
         if ($request->photo) {
             $data['photo'] = $request->photo->getClientOriginalName();
             $file = $request->photo->getClientOriginalName();
-            $filePath = 'public/backend/uploads/images/users';
+            $filePath = 'backend/uploads/images/users';
             $request->photo->move($filePath, $file);
         }
         //Lưu dữ liệu xuống database và kiểm tra
@@ -133,7 +133,7 @@ class UserController extends Controller
 
             $data['photo'] = $request->upload->getClientOriginalName();
             $file = $request->upload->getClientOriginalName();
-            $filePath = 'public/backend/uploads/images/users';
+            $filePath = 'backend/uploads/images/users';
 
             $request->upload->move($filePath, $file);
         }

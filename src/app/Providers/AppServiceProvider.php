@@ -29,7 +29,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
 
-         VerifyEmail::toMailUsing(function ($notifiable) {
+        VerifyEmail::toMailUsing(function ($notifiable) {
             $verifyUrl = URL::temporarySignedRoute(
                 'verification.verify',
                 now()->addMinutes(60),

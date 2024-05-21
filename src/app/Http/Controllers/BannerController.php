@@ -49,9 +49,9 @@ class BannerController extends Controller
         $data = $request->all();
         if ($request->upload) {
 
-            $data['photo'] = "https://yotrip.vn/public/backend/uploads/images/banners/".$request->upload->getClientOriginalName();
+            $data['photo'] = "/backend/uploads/images/banners/".$request->upload->getClientOriginalName();
             $file = $request->upload->getClientOriginalName();
-            $filePath = 'public/backend/uploads/images/banners';
+            $filePath = 'backend/uploads/images/banners';
 
             $request->upload->move($filePath, $file);
         }
@@ -107,9 +107,9 @@ class BannerController extends Controller
         $data = $request->all();
         if ($request->upload) {
 
-            $data['photo'] = "https://yotrip.vn/public/backend/uploads/images/banners/".$request->upload->getClientOriginalName();
+            $data['photo'] = "/backend/uploads/images/banners/".$request->upload->getClientOriginalName();
             $file = $request->upload->getClientOriginalName();
-            $filePath = 'public/backend/uploads/images/banners';
+            $filePath = 'backend/uploads/images/banners';
 
             $request->upload->move($filePath, $file);
         } else {
@@ -166,7 +166,7 @@ class BannerController extends Controller
             $file = $photo->getClientOriginalExtension();
             if ($file == "png" || $file == "jpeg" || $file == "jpg") {
                 $file = $request->photo->getClientOriginalName();
-                $filePath = 'public/backend/uploads/images/banners';
+                $filePath = 'backend/uploads/images/banners';
                 $request->photo->move($filePath, $file);
             } else {
                 return response()->json(404, 'Upload Faild , only upload .png,.jpg,jpeg ');
@@ -215,7 +215,7 @@ class BannerController extends Controller
             $file = $photo->getClientOriginalExtension();
             if ($file == "png" || $file == "jpeg" || $file == "jpg") {
                 $file = $request->photo->getClientOriginalName();
-                $filePath = 'public/backend/uploads/images/banners';
+                $filePath = 'backend/uploads/images/banners';
                 $request->photo->move($filePath, $file);
             } else {
                 return response()->json(404, 'Upload Faild , only upload .png,.jpg,jpeg ');

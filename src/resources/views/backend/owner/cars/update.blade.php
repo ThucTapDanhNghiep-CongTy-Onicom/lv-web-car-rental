@@ -744,7 +744,7 @@
             discount.setAttribute('max', price1);
         });
     </script>
-    <script src="{{ asset('public/backend/assets/libs/tinymce/tinymce.min.js') }}"></script>
-    <script src="{{ asset('public/backend/assets/js/pages/form-editor.init.js') }}"></script>
-    <link href="{{ asset('public/backend/assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
+    <script src="{{ asset('backend/assets/libs/tinymce/tinymce.min.js') }}"></script>
+    <script src="{{ asset('backend/assets/js/pages/form-editor.init.js') }}"></script>
+    <link href="{{ asset('backend/assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
 @endsection

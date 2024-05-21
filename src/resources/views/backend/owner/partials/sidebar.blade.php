@@ -13,7 +13,7 @@
                         <small class="text-end font-w400">{{$res_users->email}}</small>
                     </div>
                     @else
-                    <img src="{{asset('public/backend/owner/images/ion/man (1).png')}}" width="20" alt=""/>
+                    <img src="{{asset('backend/owner/images/ion/man (1).png')}}" width="20" alt=""/>
                     <div class="header-info ms-3">
                         <span class="font-w600 ">Hi,<b>AC</b></span>
                         <small class="text-end font-w400">xyz@gmail.com</small>

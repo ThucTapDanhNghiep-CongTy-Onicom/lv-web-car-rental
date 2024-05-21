@@ -17,33 +17,44 @@ use Illuminate\Support\Str;
 use Intervention\Image\ImageManagerStatic as Image;
 use Illuminate\Support\Facades\Mail;
 
-class Booking extends Controller {
+class Booking extends Controller
+{
     /**
      * Displays the user's order history.
      * Must have customer booking status
      * Includes vehicle information and rating average
-    */
-    public function my_booking(Request $request) {
-        if($request->user()) {
-             $data = Bookings_Model::select('bookings.id','bookings.total_amount','bookings.time_start',
-                                       'bookings.time_end','bookings.date_start','bookings.date_end',
-                                       'bookings.status','cars.name','cars.photo','bookings.car_id')
-                ->leftJoin('cars','cars.id','bookings.car_id')
-                ->where('bookings.user_id','=',$request->user()->id)
+     */
+    public function my_booking(Request $request)
+    {
+        if ($request->user()) {
+            $data = Bookings_Model::select(
+                'bookings.id',
+                'bookings.total_amount',
+                'bookings.time_start',
+                'bookings.time_end',
+                'bookings.date_start',
+                'bookings.date_end',
+                'bookings.status',
+                'cars.name',
+                'cars.photo',
+                'bookings.car_id'
+            )
+                ->leftJoin('cars', 'cars.id', 'bookings.car_id')
+                ->where('bookings.user_id', '=', $request->user()->id)
                 ->get();
             $res = array();
-            foreach($data as $val) {
+            foreach ($data as $val) {
                 //average rating
                 $review = new Reviews();
                 $rate = $review->average($val->car_id);
                 array_push($res, [
-                    'code_orders' => 'YT'.$val->id.'OD',
+                    'code_orders' => 'YT' . $val->id . 'OD',
                     'name'        => $val->name,
                     'photo'        => $val->photo,
                     'total_amount' => number_format($val->total_amount),
-                    'pick_up_day'   => $val->time_start.', '.date("d-m-Y", strtotime($val->date_start)),
-                    'drop_off_day'     => $val->time_end.', '.date("d-m-Y", strtotime($val->date_end)),
-                    'transaction_status' => $val-> status,
+                    'pick_up_day'   => $val->time_start . ', ' . date("d-m-Y", strtotime($val->date_start)),
+                    'drop_off_day'     => $val->time_end . ', ' . date("d-m-Y", strtotime($val->date_end)),
+                    'transaction_status' => $val->status,
                     'average_rating' => $rate->original,
                 ]);
             }
@@ -53,7 +64,7 @@ class Booking extends Controller {
                 'msg' => 'Please login before viewing the service!',
             ]);
         }
-       
+
         return response()->json([
             'status' => true,
             'msg' => 'Query successfully',
@@ -61,7 +72,8 @@ class Booking extends Controller {
         ]);
     }
     //Car booking form information and price.
-    public function booking_car_information(Request $request) {
+    public function booking_car_information(Request $request)
+    {
         $validator = Validator::make( //required
             $request->all(),
             [
@@ -87,7 +99,7 @@ class Booking extends Controller {
         }
         $date_start = $request->date_start;
         $date_end = $request->date_end;
-        if($date_start == $date_end) {
+        if ($date_start == $date_end) {
             $error = array("Duplicate times can't book!");
             return response()->json([
                 'status' => false,
@@ -114,11 +126,11 @@ class Booking extends Controller {
                 $time_end = $h_time_end . $m_time_end;
             } else {
                 $time_end = $request->time_end;
-            }     
+            }
         }
-        $res_car_detail = Cars_Model::select('id','name','price','seat','photo','discount','status')
-                    ->where('id',$request->cars_id)
-                    ->first();
+        $res_car_detail = Cars_Model::select('id', 'name', 'price', 'seat', 'photo', 'discount', 'status')
+            ->where('id', $request->cars_id)
+            ->first();
         $booking = new Bookings_Model();
         $booking->users_id = $request->user()->id;
         $booking->cars_id = $res_car_detail->id;
@@ -137,7 +149,6 @@ class Booking extends Controller {
         $history->bookings_id = $booking->id;
         $history->status = 'inactive';
         $history->save();
-        //dd($res_car_detail->id);
         return response()->json([
             'status' => true,
             'msg' => 'Successful car booking',

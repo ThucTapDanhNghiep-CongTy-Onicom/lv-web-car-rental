@@ -18,14 +18,13 @@ use Illuminate\Support\Facades\Mail;
 
 class Banners extends Controller
 {
-     //List of banners on mobile screens
-     public function mobile()
-     {
-        $results = Banners_Model::select('id','title','description','photo')
-                         ->where('type', '1')
-                         ->get();
+    public function mobile()
+    {
+        $results = Banners_Model::select('id', 'title', 'description', 'photo')
+            ->where('type', '1')
+            ->get();
         $data = array();
-        foreach($results as $val){
+        foreach ($results as $val) {
             array_push($data, [
                 'id' => $val->id,
                 'title' => $val->title,
@@ -33,18 +32,18 @@ class Banners extends Controller
                 'photo' => $val->photo
             ]);
         }
-         return response()->json([
-             'status' => true,
-             'msg' => 'Query successfully',
-             'data' => $data,
-         ]);
-     }
-    //Thiếu type để phân biệt mobile , pc.
+        return response()->json([
+            'status' => true,
+            'msg' => 'Query successfully',
+            'data' => $data,
+        ]);
+    }
+
     public function index()
     {
-        $banner = Banners_Model::select('id','title','description','photo')
-                        ->where('status', 'on')
-                        ->first();
+        $banner = Banners_Model::select('id', 'title', 'description', 'photo')
+            ->where('status', 'on')
+            ->first();
         return response()->json([
             'status' => true,
             'msg' => 'Query successfully',

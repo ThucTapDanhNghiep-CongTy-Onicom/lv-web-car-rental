@@ -30,11 +30,11 @@
                                         enctype="multipart/form-data">
                                         @csrf
                                         @method('PATCH')
-                                        <img src="{{asset('public/backend/uploads/images/users/'.$users->photo)}}" alt="" style="width: 100px;
+                                        <img src="{{asset('backend/uploads/images/users/'.$users->photo)}}" alt="" style="width: 100px;
     height: 100px;
     display: block;margin-bottom: 5px;">
                                         <input type="file" id="input-file-now-custom-1" class="dropify" name="upload"
-                                            data-default-file="{{asset('public/backend/assets/images/users/user-3.jpg')}}" />
+                                            data-default-file="{{asset('backend/assets/images/users/user-3.jpg')}}" />
 
                                        
                                         <div class="mb-3">
@@ -116,8 +116,8 @@
 </div>
 @endsection
 @push('scripts')
-<script src="{{asset('public/backend/assets/libs/tinymce/tinymce.min.js')}}"></script>
+<script src="{{asset('backend/assets/libs/tinymce/tinymce.min.js')}}"></script>
 
-<script src="{{asset('public/backend/assets/js/pages/form-editor.init.js')}}"></script>
+<script src="{{asset('backend/assets/js/pages/form-editor.init.js')}}"></script>
 
 @endpush

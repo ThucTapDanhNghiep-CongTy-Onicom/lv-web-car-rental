@@ -14,7 +14,7 @@
 
         <div class="p-4">
             <div class="mb-2">
-                <img src="{{asset('public/backend/assets/images/layouts/layout-1.jpg')}}" class="img-fluid img-thumbnail" alt="">
+                <img src="{{asset('backend/assets/images/layouts/layout-1.jpg')}}" class="img-fluid img-thumbnail" alt="">
             </div>
             <div class="form-check form-switch mb-3">
                 <input type="checkbox" class="form-check-input theme-choice" id="light-mode-switch" checked />
@@ -22,11 +22,11 @@
             </div>
 
             <div class="mb-2">
-                <img src="{{asset('public/backend/assets/images/layouts/layout-2.jpg')}}" class="img-fluid img-thumbnail" alt="">
+                <img src="{{asset('backend/assets/images/layouts/layout-2.jpg')}}" class="img-fluid img-thumbnail" alt="">
             </div>
             <div class="form-check form-switch mb-3">
                 <input type="checkbox" class="form-check-input theme-choice" id="dark-mode-switch"
-                    data-bsStyle="{{asset('public/backend/assets/css/bootstrap-dark.min.css')}}" data-appStyle="{{asset('public/backend/assets/css/app-dark.min.css')}}" />
+                    data-bsStyle="{{asset('backend/assets/css/bootstrap-dark.min.css')}}" data-appStyle="{{asset('backend/assets/css/app-dark.min.css')}}" />
                 <label class="custom-control-label" for="dark-mode-switch">Chế độ tối</label>
             </div>
 

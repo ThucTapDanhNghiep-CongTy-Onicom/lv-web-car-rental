@@ -39,7 +39,7 @@
                                     <img src="{{$profile->photo}}"
                                         alt="{{$profile->name}}" class="rounded-circle img-thumbnail avatar-xl">
                                     @else
-                                    <img src="{{asset('public/backend/assets/images/users/user-3.jpg')}}" alt=""
+                                    <img src="{{asset('backend/assets/images/users/user-3.jpg')}}" alt=""
                                         class="rounded-circle img-thumbnail avatar-xl">
                                     @endif
                                     <div class="online-circle">
@@ -177,7 +177,7 @@
                                                                                 alt="{{$payment->user->name}}"
                                                                                 class="avatar-xs rounded-circle me-2">
                                                                             @else
-                                                                            <img src="public/backend/assets/images/users/user-2.jpg"
+                                                                            <img src="backend/assets/images/users/user-2.jpg"
                                                                                 alt=""
                                                                                 class="avatar-xs rounded-circle me-2">
                                                                             @endif
@@ -234,7 +234,7 @@
 
                                                                 <input type="file" id="input-file-now-custom-1"
                                                                     class="dropify"
-                                                                    data-default-file="public/profile/backend/assets/images/users/user-3.jpg"
+                                                                    data-default-file="profile/backend/assets/images/users/user-3.jpg"
                                                                     name="upload" />
                                                                 <div class="mb-3">
                                                                     <input type="text" placeholder="Full Name"
@@ -315,18 +315,18 @@
 <script src="https://maps.google.com/maps/api/js?key=AIzaSyCtSAR45TFgZjOs4nBFFZnII-6mMHLfSYI"></script>
 
 <!-- Gmaps file -->
-<script src="{{asset('public/profile/backend/assets/libs/gmaps/gmaps.min.js')}}"></script>
+<script src="{{asset('profile/backend/assets/libs/gmaps/gmaps.min.js')}}"></script>
 
-<script src="{{asset('public/profile/backend/assets/libs/dropify/js/dropify.min.js')}}"></script>
+<script src="{{asset('profile/backend/assets/libs/dropify/js/dropify.min.js')}}"></script>
 
 <!-- Magnific Popup-->
-<script src="{{asset('public/profile/backend/assets/libs/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{asset('profile/backend/assets/libs/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
 
 <!-- Chart JS -->
-<script src="{{asset('public/profile/backend/assets/libs/chart.js/Chart.bundle.min.js')}}"></script>
+<script src="{{asset('profile/backend/assets/libs/chart.js/Chart.bundle.min.js')}}"></script>
 
-<script src="{{asset('public/profile/backend/assets/js/pages/profile.init.js')}}"></script>
-<script src="{{asset('public/backend/assets/libs/jquery/jquery.min.js')}}"></script>
+<script src="{{asset('profile/backend/assets/js/pages/profile.init.js')}}"></script>
+<script src="{{asset('backend/assets/libs/jquery/jquery.min.js')}}"></script>
 
 
 

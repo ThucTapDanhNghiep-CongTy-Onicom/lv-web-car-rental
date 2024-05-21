@@ -355,11 +355,11 @@ class Users extends Controller
             if ($request->photo) {
                 $data['photo'] = $request->photo->getClientOriginalName();
                 $file = $request->photo->getClientOriginalName();
-                $filePath = 'public/backend/uploads/images/users';
+                $filePath = 'backend/uploads/images/users';
                 $request->photo->move($filePath, $file);
                 //Lưu dữ liệu xuống database và kiểm tra
                 if (strpos($request->photo->getClientOriginalName(), 'https://lh3') === false) {
-                    $data['photo'] = "https://yotrip.vn/public/backend/uploads/images/users/".$request->photo->getClientOriginalName();
+                    $data['photo'] = "/backend/uploads/images/users/".$request->photo->getClientOriginalName();
                 }
             }else{
                 $data['photo'] = $request->photo;

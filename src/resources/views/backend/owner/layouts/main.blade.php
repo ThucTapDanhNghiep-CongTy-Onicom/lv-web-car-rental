@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="{{asset('/backend/owner/vendor/jquery-nice-select/css/nice-select.css')}}" rel="stylesheet">
-	<link rel="stylesheet" href="{{asset('/backend/owner/vendor/nouislider/nouislider.min.css')}}">
+	<link rel="stylesheet" href="{{ asset('/backend/owner/vendor/nouislider/nouislider.min.css')}}">
 	<!-- Style css -->
     <link href="{{asset('/backend/owner/css/style.css')}}" rel="stylesheet">
     <link href="{{asset('/backend/owner/css/admin.css')}}" rel="stylesheet">

@@ -82,9 +82,9 @@
                         <div class="row align-items-center">
                             <div class="col-xl-6">
                                 <div class="card-bx bg-blue">
-                                    <img class="pattern-img" src="{{asset('public/backend/owner/images/pattern/pattern6.png')}}" alt="">
+                                    <img class="pattern-img" src="{{asset('backend/owner/images/pattern/pattern6.png')}}" alt="">
                                     <div class="card-info text-white">
-                                        <img src="{{asset('public/backend/owner/images/pattern/circle.png')}}" class="mb-4" alt="">
+                                        <img src="{{asset('backend/owner/images/pattern/circle.png')}}" class="mb-4" alt="">
                                         <h2 class="text-white card-balance">$824,571.93</h2>
                                         <p class="fs-16">Số dư trên Wallet</p>
                                         <span>+0,8% so với tuần trước</span>
@@ -153,7 +153,7 @@
                     </div>
                     <div class="card-body">	
                         <div class="user-bx">
-                            <img src="{{asset('public/backend/owner/images/ion/man (1).png')}}" alt="">
+                            <img src="{{asset('backend/owner/images/ion/man (1).png')}}" alt="">
                             <div>
                                 <h6 class="user-name">Samuel</h6>
                                 <span class="meta">@sam224</span>
@@ -162,12 +162,12 @@
                         </div>
                         <h4 class="mt-3 mb-3">Bạn bè gần đây<a href="javascript:void(0);" class="fs-16 float-end text-secondary font-w600">Xem thêm</a></h4>
                         <ul class="user-list">
-                            <li><img src="{{asset('public/backend/owner/images/ion/bussiness-man.png')}}" alt=""></li>
-                            <li><img src="{{asset('public/backend/owner/images/ion/hacker.png')}}" alt=""></li>
-                            <li><img src="{{asset('public/backend/owner/images/ion/man (2).png')}}" alt=""></li>
-                            <li><img src="{{asset('public/backend/owner/images/ion/woman.png')}}" alt=""></li>
-                            <li><img src="{{asset('public/backend/owner/images/ion/man.png')}}" alt=""></li>
-                            <li><img src="{{asset('public/backend/owner/images/ion/woman.png')}}" alt=""></li>
+                            <li><img src="{{asset('backend/owner/images/ion/bussiness-man.png')}}" alt=""></li>
+                            <li><img src="{{asset('backend/owner/images/ion/hacker.png')}}" alt=""></li>
+                            <li><img src="{{asset('backend/owner/images/ion/man (2).png')}}" alt=""></li>
+                            <li><img src="{{asset('backend/owner/images/ion/woman.png')}}" alt=""></li>
+                            <li><img src="{{asset('backend/owner/images/ion/man.png')}}" alt=""></li>
+                            <li><img src="{{asset('backend/owner/images/ion/woman.png')}}" alt=""></li>
                         
                         </ul>
                         <h4 class="mt-3 mb-0">Chèn số tiền</h4>

@@ -24,7 +24,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-5 align-self-center">
-                                <img src="public/backend/assets/images/error.svg" alt="" class="img-fluid">
+                                <img src="backend/assets/images/error.svg" alt="" class="img-fluid">
                             </div>
                             <!-- end col-->
                             <div class="col-md-7">

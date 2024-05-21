@@ -58,7 +58,7 @@
                                             @endphp
                                             @if(empty($val->cars_photo))
                                             <td>
-                                                <img src="{{asset('public/backend/assets/images/project-logo.jpg')}}"
+                                                <img src="{{asset('backend/assets/images/project-logo.jpg')}}"
                                                     width="50">
                                             </td>
                                             @else
